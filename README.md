@@ -14,9 +14,11 @@ Currently this script supports every method which the cmdlet Get-FileHash suppor
 - SHA512
 
 Simply execute the Script in a opened up PowerShell
+
 ![Execution of the Script](https://github.com/falkobanaszak/File-Hash-Calculator-Script/blob/master/execute_script.png)
 
 After executing the script you will be presented a menu to choose which algorithm you want to calculate.
+
 ![Script Menu](https://github.com/falkobanaszak/File-Hash-Calculator-Script/blob/master/script_menu.png)
 
 If you are calculating big files, the Script will show a progress bar, so you know the file is beeing calculated.
