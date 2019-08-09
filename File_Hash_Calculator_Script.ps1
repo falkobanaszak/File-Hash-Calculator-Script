@@ -22,7 +22,7 @@
     
     Change Log    V1.00, 08/08/2019 - Initial version
                   V1.01, 09/08/2019 - Downsized the whole script with new variables (first release was quick and dirty)
-                                      Thanks to a colleague of me for helping out !
+                  V1.02, 09/08/2019 - Added a do while loop to verify if the file the user provides really exists 
     
 .LICENSE
     MIT License
@@ -89,11 +89,16 @@ switch ($HashSelection)
     'Q' {return}
 }
 
-
+Do {
 
 # Get the file which you want to calculate the file hash from
 $FileToCalculate = read-host "Enter full path to the file you wish to calculate (without quotes)"
 
+IF (!(Test-Path $FileToCalculate))
+{
+    Write-Host -ForegroundColor Red "File could not be found, please verify your input !"
+}
+} Until (Test-Path $FileToCalculate)
 
 # Get the file hash which you want to verify with the calculated file
 $HashToVerify = read-host "Enter your file Hash you want to verify"
