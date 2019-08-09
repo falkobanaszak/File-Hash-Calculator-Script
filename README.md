@@ -35,4 +35,8 @@ The Script will tell you if your file and the provided checksum is valid or not.
 
 ![Image of a non valid hash](https://github.com/falkobanaszak/File-Hash-Calculator-Script/blob/master/hash_not_valid.png)
 
+The script also checks for a correct user input. If the file doesn't exist which the user provides, it throws an error message.
+
+![Missing File or wrong input](https://github.com/falkobanaszak/File-Hash-Calculator-Script/blob/master/missing_file.png)
+
 Get the Script here: [File Hash Calculator Script](https://github.com/falkobanaszak/File-Hash-Calculator-Script/blob/master/File_Hash_Calculator_Script.ps1)
