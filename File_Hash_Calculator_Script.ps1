@@ -22,6 +22,7 @@
     
     Change Log    V1.00, 08/08/2019 - Initial version
                   V1.01, 09/08/2019 - Downsized the whole script with new variables (first release was quick and dirty)
+                                      Thanks to a colleague of me for helping out !
     
 .LICENSE
     MIT License
