@@ -45,12 +45,10 @@
  
 #>
 
-
 # Write Progress Variables
 $Activity = "Calculating and comparing the File Hash Value"
 $ID = 1
 $Task = "Please Wait, calculating..."
-
 
 # The Main Menu
 function Show-Menu
@@ -70,7 +68,6 @@ function Show-Menu
     Write-Host "7: Press '7' for SHA512"
     Write-Host "Q: Press the 'Q' button to quit"
 }
-
 
 # Showing the Menu and selecting the hash method
 Show-Menu -MenuTitle " Choose your desired hash calculation method "
