@@ -76,7 +76,6 @@ function Show-Menu
 Show-Menu -MenuTitle " Choose your desired hash calculation method "
 $HashSelection = Read-Host "Please select your desired hash calculation method"
 
-
 switch ($HashSelection)
 {
     '1' {$algorithm=  "MACTripleDES"}
