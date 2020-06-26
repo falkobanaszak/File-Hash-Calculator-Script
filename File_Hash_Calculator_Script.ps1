@@ -103,17 +103,14 @@ IF (!(Test-Path $FileToCalculate))
 # Get the file hash which you want to verify with the calculated file
 $HashToVerify = read-host "Enter your file Hash you want to verify"
 
-
 # Write the Progress in the PowerShell console
 Write-Progress -ID $ID -Activity $Activity -Status $Task
-
 
 # Compare file hash with the given original file hash value and check whether given file hash matches or not
 # Also writing the output to the file
 $Difference = Get-FileHash -Path "$FileToCalculate" -Algorithm $algorithm | Compare-Object -ReferenceObject "$HashToVerify" -DifferenceObject {$_.Hash}
         
 If ($Difference)
-
 
 {
     Write-Host $algorithm "hash does not match with the calculated one from your given file ! " -ForegroundColor red
